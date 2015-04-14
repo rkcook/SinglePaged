@@ -2,7 +2,7 @@
 <html>
   <head>
   <style>
-    #map-canvas { width:800px; height:800px; }
+    #map-canvas { width: auto; height:auto; z-index: -100;}
     .layer-wizard-search-label { font-family: sans-serif };
   </style>
   <script type="text/javascript"
@@ -16,7 +16,7 @@
     var layer_3;
     function initialize() {
       map = new google.maps.Map(document.getElementById('map-canvas'), {
-        center: new google.maps.LatLng(33.00076908430823, -96.65215690624996),
+        center: new google.maps.LatLng(50.40614490016365, -83.24461947219474),
         zoom: 4,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       });
@@ -32,7 +32,7 @@
       layer_1 = new google.maps.FusionTablesLayer({
         query: {
           select: "col3",
-          from: "1k_GIak3UDyPNHNIZWNyc-VV9pt8u45nTDCCzN7ED"
+          from: "1d6E1BRbIF0oPArzWPQLzoG453UoLj5cRMfhPO4yM"
         },
         map: map,
         styleId: 2,
@@ -40,21 +40,21 @@
       });
       layer_2 = new google.maps.FusionTablesLayer({
         query: {
-          select: "col0",
-          from: "1AsDwKm51k4LNF5j3EZM97XVUzZqs3g57-Pe7b-Of"
-        },
-        map: map,
-        styleId: 3,
-        templateId: 4
-      });
-      layer_3 = new google.maps.FusionTablesLayer({
-        query: {
           select: "col2",
           from: "1jasY6LrnZnReT-vnjsc5stD7kgu_PdwmkFyoOL5t"
         },
         map: map,
         styleId: 3,
         templateId: 3
+      });
+      layer_3 = new google.maps.FusionTablesLayer({
+        query: {
+          select: "col0",
+          from: "1AsDwKm51k4LNF5j3EZM97XVUzZqs3g57-Pe7b-Of"
+        },
+        map: map,
+        styleId: 3,
+        templateId: 4
       });
     }
     google.maps.event.addDomListener(window, 'load', initialize);
