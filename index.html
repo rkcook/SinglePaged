@@ -2,7 +2,70 @@
 layout: default
 title: Hank Quinlan, Horrible Cop
 ---
+<head>
+<style>
+    #map-canvas { 
+      width: 800px; 
+      height: 600px;
+    }
+    .layer-wizard-search-label { font-family: sans-serif };
+  </style>
+  <script type="text/javascript"
+    src="http://maps.google.com/maps/api/js?sensor=false">
+  </script>
+  <script type="text/javascript">
+    var map;
+    var layer_0;
+    var layer_1;
+    var layer_2;
+    var layer_3;
+    function initialize() {
+      map = new google.maps.Map(document.getElementById('map-canvas'), {
+        center: new google.maps.LatLng(50.40614490016365, -83.24461947219474),
+        zoom: 4,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+      layer_0 = new google.maps.FusionTablesLayer({
+        query: {
+          select: "col3>>0",
+          from: "1GnbHInMaRIxwqc9WMXW2wTj5Dkz13lv49vPU-Y-9"
+        },
+        map: map,
+        styleId: 2,
+        templateId: 2
+      });
+      layer_1 = new google.maps.FusionTablesLayer({
+        query: {
+          select: "col3",
+          from: "1d6E1BRbIF0oPArzWPQLzoG453UoLj5cRMfhPO4yM"
+        },
+        map: map,
+        styleId: 2,
+        templateId: 2
+      });
+      layer_2 = new google.maps.FusionTablesLayer({
+        query: {
+          select: "col2",
+          from: "1jasY6LrnZnReT-vnjsc5stD7kgu_PdwmkFyoOL5t"
+        },
+        map: map,
+        styleId: 3,
+        templateId: 3
+      });
+      layer_3 = new google.maps.FusionTablesLayer({
+        query: {
+          select: "col0",
+          from: "1AsDwKm51k4LNF5j3EZM97XVUzZqs3g57-Pe7b-Of"
+        },
+        map: map,
+        styleId: 3,
+        templateId: 4
+      });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+</head>
 <div class="blurb">
-	<h1>Hi there, I'm Hank Quinlan!</h1>
-	<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> <a href="/about"> Read more about my life...</a></p>
-</div><!-- /.blurb -->
+	<h1>Hi there, I'm Ryan Cook!</h1>
+	<p>This is a test website for me to try out github pages <em>A Touch of Evil</em> <a href="/about"> Read more about my life...</a></p></div><!-- /.blurb -->
+<div id="map-canvas"></div>
