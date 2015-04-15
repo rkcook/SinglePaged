@@ -41,3 +41,26 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+header {
+    text-align:left;
+    padding:5px;
+    font-family:monospace;
+    font-size:2em
+}
+wrap {
+    width:600px;
+    margin:0 auto;
+}
+leftsection {
+    float:left;
+    width:300px;
+    font-family:monospace;
+    font-size:1.2em;
+    text-decoration:none;
+}
+rightsection {
+    float:left;
+    width:300px;
+    font-family:monospace
+}
