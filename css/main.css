@@ -48,18 +48,18 @@ header {
     font-family:monospace;
     font-size:2em
 }
-#wrap {
+.wrap {
     width:600px;
     margin:0 auto;
 }
-#leftsection {
+.leftsection {
     float:left;
     width:300px;
     font-family:monospace;
     font-size:1.2em;
     text-decoration:none;
 }
-#rightsection {
+.rightsection {
     float:left;
     width:300px;
     font-family:monospace
