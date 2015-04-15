@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Ryan Cook, test page</title>
+        <meta name="description" content="Ryan Cook, test page">
+        <link rel="stylesheet" href=/css/"main.css">
+        <style>
+            #header {
+                text-align:left;
+                padding:5px;
+                font-family:monospace;
+                font-size:2em
+            }
+            #wrap {
+               width:600px;
+               margin:0 auto;
+            }
+            #leftsection {
+                float:left;
+                width:300px;
+                font-family:monospace;
+                font-size:1.2em;
+                text-decoration:none;
+            }
+            #rightsection {
+                float:left;
+                width:300px;
+                font-family:monospace
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <p>Hi, I'm Ryan. This is my website.</p>
+        </div>
+
+        <div id="wrap">
+            <div id="leftsection">
+                <tr>
+	        		<a href="/">Home</a><br>
+		        	<a href="/about">About</a><br>
+	        		<a href="/cv">CV</a><br>
+	        		<a href="/blog">Blog</a><br>
+	        		<a href="/map.html">Map</a><br>
+                </tr>
+            </div>
+            
+            <div id="rightsection">
+                {{ content }}
+            </div>
+        </div>
+        
+    </body>
+</html>
