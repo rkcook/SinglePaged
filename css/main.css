@@ -57,6 +57,7 @@ header {
     width:120px;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-size:1.2em;
+    font-weight: bold;
 }
 .rightsection {
     float:left;
