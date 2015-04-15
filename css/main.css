@@ -54,10 +54,9 @@ header {
 }
 .leftsection {
     float:left;
-    width:300px;
+    width:120px;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-size:1.2em;
-    text-decoration:none;
 }
 .rightsection {
     float:left;
