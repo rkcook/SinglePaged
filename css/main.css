@@ -59,7 +59,7 @@ header {
     font-size:1.2em;
 }
 .rightsection {
-    float:left;
+    float:right;
     width:300px;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
