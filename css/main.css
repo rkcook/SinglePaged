@@ -53,13 +53,28 @@ ul.posts li {
     width:600px;
     margin:10 auto;
 }
-
+/*full right body section*/
 .rightsection {
-    float:left;
+    float:none;
     width:66%;
     position: relative;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     background-color:yellow;
+}
+/*2 part layout*/
+.middlesection {
+    float:left;
+    width:33%;
+    position:relative;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    background-color:green;
+}
+.rightsection2 {
+    float:right;
+    width:33%;
+    position:relative;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    background-color:green;
 }
 /*Navbar*/
 .ac-container{
