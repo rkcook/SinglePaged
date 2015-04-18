@@ -60,7 +60,7 @@ header {
 }
 /*Navbar*/
 .ac-container{
-    width: 100px;
+    width: auto;
     text-align: left;
     float: left;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -94,13 +94,11 @@ header {
     position: relative;
     z-index: 20;
     display: flex;
-    width: 100px;
-    text-align: left;
-    float: left;
+    width: auto;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     cursor: pointer;
     text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-    line-height: 33px;
+    line-height: 2em;
     font-size: 1.5em;
     background: #ffffff;
 }
