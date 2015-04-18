@@ -111,7 +111,6 @@ header {
     margin-top: 5px;
     overflow: hidden;
     max-height: 0px;
-    position: relative;
     z-index: 10;
     -webkit-transition: max-height 0.3s ease-in-out;
     -moz-transition: max-height 0.3s ease-in-out;
