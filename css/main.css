@@ -108,7 +108,7 @@ header {
 }
 
 .ac-container section{
-    margin-top: 5px;
+    margin-top: 1px;
     overflow: hidden;
     max-height: 0px;
     z-index: 10;
