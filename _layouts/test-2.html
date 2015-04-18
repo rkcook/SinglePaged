@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+	<html>    
+    <head>
+        <title>{{ page.title }}</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+        <style>
+        .ac-container{
+            width: auto;
+            text-align: left;
+        }
+
+        .ac-container label{
+            font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+            padding: 1px 10px;
+            position: relative;
+            z-index: 20;
+            display: flex;
+            height: auto;
+            width:auto;
+            cursor: pointer;
+            text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+            line-height: 33px;
+            font-size: 1.5em;
+            background: #ffffff;
+        }
+
+        .ac-container label:hover{
+            text-decoration: line-through;
+        }
+
+
+        .ac-container input{
+            display: none;
+        }
+
+        .ac-container section{
+            background: rgba(255, 255, 255, 0.5);
+            margin-top: -5px;
+            overflow: hidden;
+            max-height: 0px;
+            position: relative;
+            z-index: 10;
+            -webkit-transition: max-height 0.3s ease-in-out;
+            -moz-transition: max-height 0.3s ease-in-out;
+            -o-transition: max-height 0.3s ease-in-out;
+            -ms-transition: max-height 0.3s ease-in-out;
+            transition: max-height 0.3s ease-in-out;
+        }
+        .ac-container section p{
+            font-style: italic;
+            color: #777;
+            line-height: 1em;
+            font-size: 1em;
+            padding: 1px 10px;
+            text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+        }
+
+        .ac-container input:checked ~ section{
+            -webkit-transition: max-height 0.25s ease-in-out ;
+            -moz-transition: max-height 0.25s ease-in-out;
+            -o-transition: max-height 0.25s ease-in-out;
+            -ms-transition: max-height 0.25s ease-in-out;
+            transition: max-height 0.25s ease-in-out;
+        }
+
+        .ac-container input:checked ~ section.ac-small{
+            max-height: 1000px; /*auto*/
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="ac-container">
+            <div>
+                <input id="ac-1" name="accordion-1" type="url" />
+                <section class="ac-small">
+                    <a href="/">Home</a>
+                </section>
+                <label for="ac-1">Home</label>
+            </div>
+            <div>
+            <input id="ac-2" name="accordion-2" type="checkbox" />
+
+                <section class="ac-small">
+                    <p>Some content...Some content... Some content... Some content... Some content... Some content... Some content... Some content... Some content... Some content... Some content... Some content... Some content... Some content... Some content... Some content... Some content... Some content... Some content... Some content... Some content... Some content...  </p>
+                </section>
+                <label for="ac-2">About us</label>
+
+            </div>    
+
+            <div>    
+                <section class="ac-small">
+                    <p>Some content... </p>
+                </section>
+                <label for="ac-3">About us</label>   
+            </div>
+                <input id="ac-4" name="accordion-4" type="checkbox" />
+                <section class="ac-small">
+                    <p>Some content... </p>
+                </section>
+                <label for="ac-4">About us</label>             
+            <div>
+                <input id="ac-5" name="accordion-5" type="checkbox" />
+                <section class="ac-small">
+                    <p>Some content... </p>
+                </section>
+                <label for="ac-5">About us</label>                   
+            </div>
+        </div>
+    </body>
