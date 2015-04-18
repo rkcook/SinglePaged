@@ -55,7 +55,7 @@ header {
 
 .rightsection {
     float:left;
-    width:66%;
+    width:480px;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 /*Navbar*/
@@ -124,7 +124,7 @@ header {
     color: #777;
     line-height: 1.25em;
     font-size: 1em;
-    padding: 1px 20px;
+    padding: 1px;
     position:relative;
     text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
 }
