@@ -52,15 +52,91 @@ header {
     width:600px;
     margin:0 auto;
 }
-.leftsection {
-    float:left;
-    width:120px;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    font-size:1.2em;
-    font-weight: bold;
-}
+
 .rightsection {
     float:left;
     width:480px;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+/*Navbar*/
+.ac-container{
+    width: 100px;
+    text-align: left;
+    float: left;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+.ac-container label{
+    padding: 1px 10px;
+    position: relative;
+    z-index: 20;
+    display: flex;
+    height: auto;
+    width:auto;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    line-height: 33px;
+    font-size: 1.5em;
+    background: #ffffff;
+}
+
+.ac-container label:hover{
+    text-decoration: line-through;
+}
+
+.ac-container input{
+    display: none;
+}
+
+#home {
+    text-decoration: none;
+    padding: 1px 10px;
+    position: relative;
+    z-index: 20;
+    display: flex;
+    width: 100px;
+    text-align: left;
+    float: left;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    cursor: pointer;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    line-height: 33px;
+    font-size: 1.5em;
+    background: #ffffff;
+}
+#home:hover{
+    text-decoration: line-through;            
+}
+
+.ac-container section{
+    margin-top: -5px;
+    overflow: hidden;
+    max-height: 0px;
+    position: relative;
+    z-index: 10;
+    -webkit-transition: max-height 0.3s ease-in-out;
+    -moz-transition: max-height 0.3s ease-in-out;
+    -o-transition: max-height 0.3s ease-in-out;
+    -ms-transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
+}
+.ac-container section p{
+    font-style: italic;
+    color: #777;
+    line-height: 1em;
+    font-size: 1em;
+    padding: 1px 10px;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+
+.ac-container input:checked ~ section{
+    -webkit-transition: max-height 0.25s ease-in-out ;
+    -moz-transition: max-height 0.25s ease-in-out;
+    -o-transition: max-height 0.25s ease-in-out;
+    -ms-transition: max-height 0.25s ease-in-out;
+    transition: max-height 0.25s ease-in-out;
+}
+
+.ac-container input:checked ~ section.ac-small{
+    max-height: 1000px; /*auto*/
 }
