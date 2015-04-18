@@ -101,6 +101,7 @@ header {
     line-height: 2em;
     font-size: 1.5em;
     background: #ffffff;
+    color:black;
 }
 #home:hover{
     text-decoration: line-through;            
