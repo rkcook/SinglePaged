@@ -67,6 +67,7 @@ ul.posts li {
     width:33%;
     position:fixed;
     margin-left:200px;
+    z-position: 20;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     background-color:green;
 }
@@ -74,6 +75,7 @@ ul.posts li {
     width:33%;
     float:left;
     position:relative;
+    z-position:10;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     background-color:red;
 }
