@@ -112,6 +112,8 @@ header {
     overflow: hidden;
     max-height: 0px;
     z-index: 10;
+    position:relative;
+    left: -10px;
     -webkit-transition: max-height 0.3s ease-in-out;
     -moz-transition: max-height 0.3s ease-in-out;
     -o-transition: max-height 0.3s ease-in-out;
