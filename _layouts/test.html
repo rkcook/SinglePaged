@@ -10,16 +10,8 @@
 			<p>Hi, I'm Ryan. This is my website.</p>
 	        </div>
 	        <div id="wrap">
-	            <div class="leftsection">
-	            		<br>
-				<a href="/">Home</a><br>
-				<a href="/about">About</a><br>
-				<a href="/cv">CV</a><br>
-				<a href="/blog">Blog</a><br>
-				<a href="/map.html">Map</a><br>
-				<a href="/presentations">Preso's</a>
-				<a href="/audio">audio</a>				
-	            </div>
+			{% include nav.html %}				
+	        </div>
 	            <div class="rightsection"> {{ content }} </div>
 	        </div>
 	    </body>
