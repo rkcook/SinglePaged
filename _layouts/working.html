@@ -10,10 +10,22 @@
 	        <div class="header">
 	        	<h1>Header Space.</h1>
 	        </div>
-	        <div class="wrap">
+	        <div class="ac-container">
 			{% include nav.html %}				
 	        </div>
-	            <div class="rightsection"> {{ content }} </div>
+	        <div class="middlesection">
+	        	{{ content }} 
+	        </div>
+	        <div class="rightsection2"> 
+	        	<h1>Latest Post</h1>
+			{% for post in site.posts limit:1 %}
+			... Show the first post all big ...
+			{% endfor %}
+			<h1>Recent Posts</h1>
+			{% for post in site.posts offset:1 limit:2 %}
+			... Show the next two posts ...
+			{% endfor %}
+	        </div>
 	        </div>
 	    </body>
 	</html>
