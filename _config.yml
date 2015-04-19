@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-name: Ryan Cook, Test Page
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
-gems:
-  - jekyll-sitemap
-=======
 ---
 
 port: 4000
@@ -22,7 +15,7 @@ highlighter: pygments
 
 
 ### content configuration ###
-title:       "Ryan Cook - Simple Jekyll template"
+title:       "SinglePaged - Simple Jekyll template"
 keywords:    "SinglePaged, jekyll, template, github, blog, single page"
 description: "A single-page template for Jekyll based blogs (like what you'd use on github pages!)"
 source_link: "https://github.com/t413/SinglePaged"
@@ -40,4 +33,3 @@ colors:
   purple:    '#c869bf'
   orange:    '#fab125'
   turquoise: '#0fbfcf'
->>>>>>> c3b61c212aac6235ad12c1765c4ae4252b417a11
