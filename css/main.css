@@ -74,6 +74,7 @@ header {
 /*Navbar*/
 .ac-container{
     width: 33%;
+    display: inline;
     text-align: left;
     float: left;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
