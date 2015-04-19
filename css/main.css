@@ -62,7 +62,6 @@ header {
 .middlesection {
     float:left;
     width:33%;
-    margin-left:200px;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     background-color:green;
 }
