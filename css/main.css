@@ -61,7 +61,7 @@ header {
 /*2 part layout*/
 .middlesection {
     float:left;
-    width:33%;
+    width:66%;
     position:fixed;
     margin-left:200px;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
