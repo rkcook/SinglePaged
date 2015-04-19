@@ -70,7 +70,6 @@ header {
 .rightsection2 {
     width:33%;
     float:left;
-    position:relative;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     background-color:red;
 }
